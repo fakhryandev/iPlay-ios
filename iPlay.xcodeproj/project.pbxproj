@@ -67,6 +67,7 @@
 		E7A40CAB2A30E5770035AFB0 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E7D870872A2F8C10006717F1 /* HomeView.swift */,
 				E7A40CAC2A30E5870035AFB0 /* DetailView.swift */,
 			);
 			path = View;
@@ -96,7 +97,6 @@
 				E71DF24F2A2F95EB006F1F4B /* Model */,
 				E71DF24B2A2F952A006F1F4B /* Helpers */,
 				E7D870852A2F8C10006717F1 /* iPlayApp.swift */,
-				E7D870872A2F8C10006717F1 /* HomeView.swift */,
 				E7D870892A2F8C12006717F1 /* Assets.xcassets */,
 				E7D8708B2A2F8C12006717F1 /* Preview Content */,
 			);
