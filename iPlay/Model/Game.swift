@@ -8,10 +8,12 @@
 import Foundation
 
 class Game: Identifiable {
+    let id: Int
     let name: String
     let backgroundImage: URL
     
-    init(name: String, backgroundImage: URL) {
+    init(id: Int ,name: String, backgroundImage: URL) {
+        self.id = id
         self.name = name
         self.backgroundImage = backgroundImage
     }
@@ -26,12 +28,14 @@ struct GameResponses: Codable {
 }
 
 struct GameResponse: Codable {
+    let id: Int
     let name: String
     let backgroundImage: URL
     
     enum CodingKeys: String, CodingKey {
         case name
         case backgroundImage = "background_image"
+        case id
     }
     
     init(from decoder: Decoder) throws {
@@ -41,5 +45,6 @@ struct GameResponse: Codable {
         backgroundImage = URL(string: backgroundImageUrl)!
         
         name = try container.decode(String.self, forKey: .name)
+        id = try container.decode(Int.self, forKey: .id)
     }
 }

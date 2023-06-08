@@ -18,17 +18,11 @@ struct HomeView: View {
         VStack {
             NavigationView{
                 List(viewModel.games){ game in
-                    HStack{
-                        NavigationLink(destination: DetailView(title: game.name)){
-                            Text(game.name)
-                        }
+                    NavigationLink(destination: DetailView(id: game.id)){
+                        Text(game.name)
                     }
                 }
-            }.navigationTitle("Tes")
-            //            Image(systemName: "globe")
-            //                .imageScale(.large)
-            //                .foregroundColor(.accentColor)
-            //            Text("Hello, world!")
+            }
         }
         .padding()
     }

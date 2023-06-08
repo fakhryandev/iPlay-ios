@@ -15,6 +15,7 @@
 		E7D870882A2F8C10006717F1 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D870872A2F8C10006717F1 /* HomeView.swift */; };
 		E7D8708A2A2F8C12006717F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7D870892A2F8C12006717F1 /* Assets.xcassets */; };
 		E7D8708D2A2F8C12006717F1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7D8708C2A2F8C12006717F1 /* Preview Assets.xcassets */; };
+		E7F07C352A3213FD00C38E07 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F07C342A3213FD00C38E07 /* DetailViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		E7D870872A2F8C10006717F1 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		E7D870892A2F8C12006717F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E7D8708C2A2F8C12006717F1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E7F07C342A3213FD00C38E07 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				E71DF2532A2F9B1F006F1F4B /* HomeViewModel.swift */,
+				E7F07C342A3213FD00C38E07 /* DetailViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -183,6 +186,7 @@
 			files = (
 				E7D870882A2F8C10006717F1 /* HomeView.swift in Sources */,
 				E7A40CAD2A30E5870035AFB0 /* DetailView.swift in Sources */,
+				E7F07C352A3213FD00C38E07 /* DetailViewModel.swift in Sources */,
 				E71DF24D2A2F959F006F1F4B /* NetworkService.swift in Sources */,
 				E7D870862A2F8C10006717F1 /* iPlayApp.swift in Sources */,
 				E71DF2542A2F9B1F006F1F4B /* HomeViewModel.swift in Sources */,

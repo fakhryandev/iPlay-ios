@@ -8,15 +8,31 @@
 import SwiftUI
 
 struct DetailView: View {
-    var title: String
+    @StateObject var viewModel: DetailViewModel
+    
+    init(id: Int) {
+        _viewModel = StateObject(wrappedValue: DetailViewModel(id: id))
+    }
     
     var body: some View {
-        Text(title)
+        VStack{
+            if let game = viewModel.game{
+                Text(game.name)
+            }else{
+                Text("Tunggu")
+            }
+        }
+        .navigationTitle("Detail")
+        .onAppear{
+            Task{
+                await viewModel.getGame()
+            }
+        }
     }
 }
 
-    struct DetailView_Previews: PreviewProvider {
-        static var previews: some View {
-            DetailView(title: "Temp")
-        }
-    }
+//    struct DetailView_Previews: PreviewProvider {
+//        static var previews: some View {
+//            DetailView(id: 3428)
+//        }
+//    }
